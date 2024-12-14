@@ -1,0 +1,8 @@
+<%- layout("layouts/app") %>
+<h1>Students</h1>
+<a href="/students/create">Add Student</a>
+<% for(const student of students){ %>
+<h5>
+  <a href="/students/<%= student._id %>"><%= student.name%></a> (<%= student.npm %>)
+</h5>
+<% } %>

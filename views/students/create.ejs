@@ -1,0 +1,11 @@
+<%- layout('layouts/app') %>
+<h1>Add Student</h1>
+<form action="/students" method="POST">
+  <label for="name">Name</label>
+  <input type="text" name="student[name]" id="name" required>
+  <label for="npm">NPM</label>
+  <input type="text" name="student[npm]" id="npm" required>
+  <label for="fakultas">Fakultas</label>
+  <input type="text" name="student[fakultas]" id="fakultas" required>
+  <button type="submit">Submit</button>
+</form>

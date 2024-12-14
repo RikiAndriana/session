@@ -1,0 +1,10 @@
+<%- layout("layouts/app") %>
+
+<h1><%= student.name %></h1>
+<h5><%= student.npm %></h5>
+<h5><%= student.fakultas %></h5>
+<a href="/students/<%= student._id %>/edit">Edit</a>
+<a href="/students">All Students</a>
+<form action="/students/<%= student._id %>?_method=DELETE" method="POST">
+  <button type="submit">Delete</button>
+</form>

@@ -1,0 +1,11 @@
+<%- layout('layouts/app') %>
+<h1>Edit</h1>
+<form action="/students/<%= student._id %>?_method=PUT" method="POST">
+  <label for="name">Name</label>
+  <input type="text" name="student[name]" id="name" value="<%= student.name %>">
+  <label for="npm">NPM</label>
+  <input type="number" name="student[npm]" id="npm" value="<%= student.npm %>">
+  <label for="fakultas">Fakultas</label>
+  <input type="text" name="student[fakultas]" id="fakultas" value="<%= student.fakultas %>">
+  <button type="submit">Submit</button>
+</form>
